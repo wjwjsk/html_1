@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br>
+    <form action="./result.html" method="get">
+        <fieldset>
+            <legend>문의사항 양식</legend>
+            <div>
+                <label for="username">ID :</label>    
+                <input type="text" name="username" placeholder="아이디" autocomplete="on" required>
+            </div>
+            <div>
+                <label for="password">PW :</label>
+                <input type="password" name="password" placeholder="패스워드" autocomplete="on" required>
+            </div>
+            <div>
+                <label for="email">E-Mail :</label>
+                <input type="text" name="email" placeholder="이메일" required>
+            </div>
+            <div>
+                <label for="gender">성별 :</label>
+                <input type="radio" name="gender" value="male" id="male" required>
+                <label for="male">남성</label>
+                <input type="radio" name="gender" value="female" id="female" required>
+                <label for="female">여성</label>
+            </div>
+            <div>
+                <label for="brith">생년월일 :</label>
+                <input type="date" name="brith" min="1900-01-01" max="2099-12-31">
+            </div>
+            <div>
+                <label name="type">문의사항을 선택하세요</label>
+                <select name="type">
+                    <option value="선택">선택</option>
+                    <option value="1">환불</option>
+                    <option value="2">고장신고</option>
+                    <option value="3">기타</option>
+                </select>
+            </div>
+            <div>
+                <label for="summary">설명</label><br>
+                <textarea name="summary" rows="3" cols="20" placeholder="내용을 입력하세요"></textarea>
+            </div>
+            <div>
+                <label for="argee"> 개인정보 수집에 동의</label>
+                <input type="checkbox" name="argee" id="argee" required>
+                <p style="color: red;">미동의시 제출이 불가합니다. </p>
+            </div>
+
+        </fieldset>
+        <br>
+        <div>
+            <button type="submit">제출</button>
+        </div>
+    </form>
+</body>
+</html>
